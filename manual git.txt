@@ -1,0 +1,27 @@
+
+git init                        ------ crea un nuevo repositorio local vacio
+
+git clone direccion web del repositorio remoto a clonar     ----- clona el repositorio remoto al repositorio local 
+
+git status                      ------ Revisa si hay cambios para subir al repositorio local
+
+git add -A                      ----- Prepara todos los archivos con cambios que searn subidos al repositorio local
+
+git commit -m 			------ guarda en el repositorio local los cambios de los archivos que fueron preparados para guardarse 
+
+git pull origin        		----- Actualiza al repositorio local los cambios realizados en el repositorio remoto
+
+git push origin nombre_rama 	----- Sube los cambios del repositorio local al repositorio remoto a la rama que se quiera
+
+git ckeckout			----- te dice en que ram te encuentras
+
+git branch			----- te muetsra las ramas disponibles
+
+git branch Nombre_rama_nueva    ------ Crea una nueva rama
+
+git log 			----- muestra los commits hechos en la rama en la que estas
+
+ git merge nombre_rama		------ fusiona la rama en la que te encuentras con la rama que eascribiste 
+
+git git checkout -b "rama_A"   ----- crea una nueva rama y te mueve a la nueva rama
+ 
