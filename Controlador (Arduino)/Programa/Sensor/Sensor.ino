@@ -48,8 +48,8 @@ void loop() {
   int medicion_B = Sensor_B.ping_median();
   int distancia_B = (medicion_B / US_ROUNDTRIP_CM);
 
-  int distancia2_A = distancia_A * 10;
-  int distancia2_B = distancia_B * 10;
+  int distancia2_A = distancia_A - 10;
+  int distancia2_B = distancia_B;
 
 
   /*¿Hay un dato disponible para leer?*/
@@ -80,10 +80,10 @@ void loop() {
   digitalWrite(Amarillo_B, LOW);
   digitalWrite(Verde_B, LOW);
   
-  if(distancia_A > 20){
+  if(distancia2_A > 20){
     digitalWrite(Verde_A, HIGH);
   }
-  else if(distancia_A > 10){
+  else if(distancia2_A > 10){
     digitalWrite(Amarillo_A, HIGH);
   }
   else{
